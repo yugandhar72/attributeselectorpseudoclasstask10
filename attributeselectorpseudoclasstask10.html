@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music&Menu</title>
+    <style>
+        
+@import url("https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+*{
+    margin: 0%;
+    padding: 0%;
+    border: none;
+    box-sizing: border-box;
+    font-family: "ubuntu";
+}
+h1[id="tophead"]{
+    font-size: 40px;
+    margin-bottom: 20px;
+    background-color: rgb(43, 220, 20);
+    text-align: center;
+    text-shadow: 3px 3px 4px black;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-top: 20px;
+    margin-left: 30px;
+    border-radius: 20px;
+}
+section h1{
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    gap: 10px 20px;
+}
+/* The [attribute] selector is used to select elements with a specified attribute. */
+[Controls]{
+    background-color: rgb(43, 220, 20);
+}
+
+[class|="h2top"]{
+    text-align: center;
+    background-color: rgb(43, 220, 20);
+    font-size: bold;
+    text-shadow: 2px 2px 5px rgb(235, 235, 243);
+}
+[class|="menu"]{
+    margin: 30px;
+    text-align: left;
+    background-color: rgb(43, 220, 20);
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+}
+li:nth-child(2n){
+    background-color: black;
+    color: white;
+}
+ul:hover{
+    font-size: xx-large;
+    background-color: red;
+    color: aliceblue;
+}
+li::selection{
+    background-color: yellow;
+}
+h1:hover{
+    background-color: lawngreen;
+    background-clip: content-box;
+    font-size: x-large;
+    text-shadow: 4px 3px 3px white;
+}
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <section>
+            <div>
+                <h1 id="tophead">Music List</h1>
+                <div>
+                    <h2 class="h2top">Songs List One</h2>
+                    <div class="list" #id="list1">
+                        <audio src="[iSongs.info] 03 - Chuttamalle.mp3" controls></audio>
+                        <audio src="tere-liye-enigma-8877-8882.mp3" controls></audio>
+                        <audio src="ssstik-io-1697909484687-63429.mp3" controls></audio>
+                        <audio src="tumhihopurelovemixwwwdjmazacomringtone-15519-15543.mp3" controls></audio>
+                        <audio src="[iSongs.info] 03 - Chuttamalle.mp3" controls></audio>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div>
+                    <h2 class="h2top">Songs List Two</h2>
+                    <div class="list" id="list2">
+                        <audio src="tere-liye-enigma-8877-8882.mp3" controls></audio>
+                        <audio src="tumhihopurelovemixwwwdjmazacomringtone-15519-15543.mp3" controls></audio>
+                        <audio src="ssstik-io-1697909484687-63429.mp3" controls></audio>
+                        <audio src="[iSongs.info] 03 - Chuttamalle.mp3" controls></audio>
+                        <audio src="ssstik-io-1697909484687-63429.mp3" controls></audio>
+                    </div>
+                </div>
+        </section>
+        <section>
+            <h1>Dummu's Resto</h1>
+            <div class="menu">
+                <ul>
+                    <h1>Veg Menu</h1>
+                    <li>veg Biryani</li>
+                    <li>veg Rice</li>
+                    <li>veg Dose</li>
+                    <li>veg Manchuriya</li>
+                    <li>veg pulavo</li>
+                </ul>
+                <ul>
+                    <h1>Non Veg Menu</h1>
+                    <li>Chicken Biryani</li>
+                    <li>Mutton Biryani</li>
+                    <li>Egg Briyani</li>
+                    <li>Chicken Pulavo</li>
+                    <li>Mutton Pulavo</li>
+                </ul>
+                <ul>
+                    <h1>Drinks</h1>
+                    <li>Thumsup</li>
+                    <li>Spright</li>
+                    <li>Mazza</li>
+                    <li>cocacola</li>
+                    <li>Limca</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
